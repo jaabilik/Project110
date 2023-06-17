@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Hands to Emoji :D </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+        <h3 id="hey"> Hand Symbol ↝ Emoji Web(site)!
+            <br>
+        <span>&#9996;</span> 
+        <span>&#9995;</span>
+        <span>&#128077;</span> 
+        <span>&#128079;</span>
+        <span>&#128076;</span> 
+        <span>&#10084;</span>  
+    </h3>
+      <br><br>
+
+      <p style=" font-size: 22px;">Take your selfie to generate an emotion emoji!
+      	<br>
+        <p> emotions available ⇓ </p>
+        <div id="tastetherainbow">
+        <span>&#129311;</span>
+        <span>&#128400;</span>
+        <span>&#128077;</span>
+        <span>&#9996;</span>
+        <span>&#10084;</span>
+    </div>
+        <b style="color: rgba(208, 206, 202, 0)"> its heart symbol bru </b>
+      </p>
+<div class="col-md-4 col-sm-12 col-xs-12">
+    <label>Webcam View; </label>
+    <div id="camera"></div>
+    <br><br>
+    <button onclick="take_snapshot();" class="btnno">Capture Image</button>
+</div>
+
+<div class="col-md-4 col-sm-12 col-xs-12">
+    <label> Prediction 1 ⇒ </label>
+    <p class="emotion_name" id="result_emotion_name"></p>
+    <p class="emoji" id="update_emoji"></p>
+
+    <label> Prediction 2 ⇒ </label>
+    <p class="emotion_name" id="result_emotion_name2"></p>
+    <p class="emoji" id="update_emoji2"></p>
+</div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+          <div id="result"></div>
+          <br><br>
+          <button onclick="check();" class="btnno"> Predict Hand Emoji!</button>
+          <p style="color: rgba(255, 255, 255, 0.55);">I didnt just made that up</p>
+          </div>
+        <br><br>
+
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 
